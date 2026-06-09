@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <header>
       <nav
@@ -20,7 +21,7 @@
         style="background-color: #343d43"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Taller 3</a>
+          <a class="navbar-brand" href="./">Taller 3</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -38,7 +39,9 @@
               style="--bs-scroll-height: 100px"
             >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="./"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="carrusel.html">Carrusel</a>
@@ -83,59 +86,74 @@
     </header>
 
     <main>
-      <div class="mt-4 p-5 bg-primary text-white rounded container">
-        <h1>Jumbotron Example</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat..
-        </p>
-      </div>
-      <div
-        class="container"
-        style="display: flex; justify-content: space-between; margin-top: 32px"
-      >
-        <div class="card" style="width: 18rem">
-          <img src="./img/huevito.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="2"
+            ></button>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="./img/descarga.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/la.jpg" alt="Los Angeles" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/chicago.jpg"
+                alt="Chicago"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/ny.jpg" alt="New York" class="d-block w-100" />
+            </div>
           </div>
+
+          <!-- Left and right controls/icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-        <div class="card" style="width: 18rem">
-          <img src="./img/portero.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+        <div class="container-fluid mt-3">
+          <h3>Carousel Example</h3>
+          <p>
+            The following example shows how to create a basic carousel with
+            indicators and controls.
+          </p>
         </div>
-      </div>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
   </body>
 </html>

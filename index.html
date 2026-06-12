@@ -12,121 +12,127 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg bg-body-dark"
-        style="background-color: #343d43"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Taller 3</a>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-shield-check text-primary fs-3"></i> APP CORE</a
+          >
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-target="#collapsibleNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
-            >
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="carrusel.html">Carrusel</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-house-door"></i> INICIO</a
                 >
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Link</a>
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-file-earmark-break"></i> MÒDULOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONSULTAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-headset"></i> SOPORTE</a
+                >
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
+          <button type="button" class="btn btn-primary">
+            <i class="bi bi-person-circle"></i> ACCEDER
+          </button>
         </div>
       </nav>
     </header>
 
     <main>
-      <div class="mt-4 p-5 bg-primary text-white rounded container">
-        <h1>Jumbotron Example</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat..
-        </p>
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/la.jpg" alt="Los Angeles" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/chicago.jpg" alt="Chicago" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ny.jpg" alt="New York" class="d-block w-100" />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-      <div
-        class="container"
-        style="display: flex; justify-content: space-between; margin-top: 32px"
-      >
-        <div class="card" style="width: 18rem">
-          <img src="./img/huevito.png" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
+
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col p-3 text-dark">
+            <h2>Columna 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat..
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="./img/descarga.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="./img/portero.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="col p-3 text-white">
+            <img
+              src="./img/chicago.jpg"
+              class="rounded-circle img-thumbnail"
+              alt="Cinque Terre"
+            />
           </div>
         </div>
       </div>
